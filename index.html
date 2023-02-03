@@ -200,19 +200,23 @@ document.addEventListener('keydown', function(e) {
 
   // up arrow key
   if (e.which === 38) {
+    e.preventDefault()
     rightPaddle.dy = -paddleSpeed;
   }
   // down arrow key
   else if (e.which === 40) {
+    e.preventDefault()
     rightPaddle.dy = paddleSpeed;
   }
 
   // w key
   if (e.which === 87) {
+    e.preventDefault()
     leftPaddle.dy = -paddleSpeed;
   }
   // a key
   else if (e.which === 83) {
+    e.preventDefault()
     leftPaddle.dy = paddleSpeed;
   }
 });
