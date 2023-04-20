@@ -27,7 +27,7 @@
     
     /* Change the link color on hover */
     li a:hover {
-      background-color: #2313E3;
+      background-color: #D3D3D3;
       color: black;
     }
   </style>
@@ -36,15 +36,16 @@
 <ul>
   <li><a href="index.html">Home</a></li>
    <li><a href="journal.html">Engineering Journal</a></li>
-    <li><a href="pingpong.html">Games</a></li>
-         <li><a href="snake.html"> Other Game</a></li>
+    <li><a href="pingpong.html"> PingPong Game</a></li>
+         <li><a href="snake.html"> Snake Game</a></li>
+            <li><a href="frogger.html"> Frogger Game</a></li>
    <br>
 </ul>
 
 <html>
   <!DOCTYPE html>
 <head>
-  <title>Basic Pong HTML Game</title>
+  <title> Pong Game</title>
   <meta charset="UTF-8">
   <style>
   html, body {
@@ -69,8 +70,8 @@ const grid = 15;
 const paddleHeight = grid * 5; // 80
 const maxPaddleY = canvas.height - grid - paddleHeight;
 
-var paddleSpeed = 10;
-var ballSpeed = 7;
+var paddleSpeed = 9.3;
+var ballSpeed = 6.1;
 
 const leftPaddle = {
   // start in the middle of the game on the left side
